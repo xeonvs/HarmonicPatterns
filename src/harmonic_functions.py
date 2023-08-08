@@ -113,6 +113,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -217,6 +223,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -340,6 +352,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -460,6 +478,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -571,6 +595,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -689,6 +719,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -811,6 +847,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -934,6 +976,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -1042,6 +1090,12 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -1164,6 +1218,14 @@ class HarmonicDetector(object):
         if not predict:
             X, A, B, C, D = [pat[1] for pat in current_pat]
             last_direction = current_pat[-1][0]
+            if abs(X-A) == 0:
+                return None
+            if abs(A-B) == 0:
+                return None
+            if abs(B-C) == 0:
+                return None
+            if abs(X-C) == 0:
+                return None
             XAB = abs(B-A) / abs(X-A)
             XAD = abs(A-D) / abs(X-A)
             ABC = abs(B-C) / abs(A-B)
@@ -1494,3 +1556,4 @@ class HarmonicDetector(object):
 if __name__ == '__main__':
     detector = HarmonicDetector()
     print('done')
+

@@ -14,10 +14,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 setup(
     name='HarmonicPatterns',
-    version='0.0.1',
+    version='0.0.2',
     # install_requires=requirements,
     # packages=packages,
-    url='https://github.com/djoffrey/HarmonicPatterns',
+    url='https://github.com/xeonvs/HarmonicPatterns',
     author='djoffrey',
     author_email='joffrey.oh@gmail.com',
     description='A Python Library for Harmonic Trading'
