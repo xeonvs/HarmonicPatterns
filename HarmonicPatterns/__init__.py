@@ -1,1 +1,0 @@
-from .harmonic_functions import HarmonicDetector
