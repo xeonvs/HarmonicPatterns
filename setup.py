@@ -19,7 +19,7 @@ setup(
     packages=find_packages(where='src',
                            exclude=["res",
                                     "examples",]),
-    package_dir={'': 'src'},
+    package_dir={'HarmonicPatterns': 'src'},
     python_requires='>=3.8',
     url='https://github.com/xeonvs/HarmonicPatterns',
     author='djoffrey',
